@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171">
+   <children>
+      <Label layoutX="238.0" layoutY="40.0" text="Add New Order" textFill="#072bf5">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Accordion />
+    <TitledPane animated="false" layoutX="137.0" layoutY="123.0" text="Article">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="174.0" prefWidth="200.0" />
+      </content>
+    </TitledPane>
+      <TitledPane animated="false" layoutX="339.0" layoutY="122.0" text="Supplier">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="176.0" prefWidth="200.0" />
+         </content>
+      </TitledPane>
+      <VBox layoutX="37.0" layoutY="123.0" prefHeight="200.0" prefWidth="100.0">
+         <children>
+            <Pane prefHeight="231.0" prefWidth="100.0" style="-fx-background-color: lightblue;">
+               <children>
+                  <Label layoutX="27.0" layoutY="6.0" text="Quantity" />
+                  <TextField layoutX="1.0" layoutY="23.0" prefHeight="25.0" prefWidth="100.0" />
+               </children>
+            </Pane>
+         </children>
+      </VBox>
+      <Button layoutX="286.0" layoutY="350.0" mnemonicParsing="false" text="ok" />
+      <Accordion />
+   </children>
+</AnchorPane>
